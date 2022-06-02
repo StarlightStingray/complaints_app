@@ -1,15 +1,39 @@
 body {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* background: #232323;
     color: #FFBF00; */
     align-items: center;
+    /* justify-content: center; */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+#userNum {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+button {
+    border-radius: 4px;
+    border: 1px solid gray;
 }
 
 .boroughBtn {
+    width: 100vw;
     background-color: blue;
-    color: #FFFFFF
+    color: #FFFFFF;
+    padding: 12px 7px;
 }
 
 ul {
@@ -18,7 +42,7 @@ ul {
 }
 
 li {
-    width: 50vw;
+    /* width: 50vw; */
     justify-content: space-evenly;
 }
 
@@ -30,4 +54,24 @@ li::marker {
     background-color: red;
     color: #FFFFFF;
     float: right;
+}
+
+@media (min-width: 768px) {
+    form {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #userNum {
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid gray;
+    }
+    .boroughBtn {
+        width: auto;
+        background-color: blue;
+        color: #FFFFFF;
+        padding: 12px 7px;
+    }
 }
