@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* background: #232323;
+    color: #FFBF00; */
+    align-items: center;
+    justify-content: center;
+}
+
+.boroughBtn {
+    background-color: blue;
+    color: #FFFFFF
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+li::marker {
+    content: '🚨 ';
+}
+
+.policeAction {
+    background-color: red;
+    color: #FFFFFF;
+    float: right;
+}
